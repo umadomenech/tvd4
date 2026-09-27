@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Favoritos de The Vampire Diaries">
+   <title>The Vampire Diaries | Favoritos</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body class="favorites-page">
+   <div class="site-shell">
+       <header class="site-header" id="inicio">
+           <a class="mark" href="index.html" aria-label="Inicio"><img src="imagenes/logo-vd.png" alt="The Vampire Diaries"></a>
+           <div class="header-tools">
+               <button class="favorite favorite-link" type="button" data-link="favoritos.html" aria-label="Ir a favoritos">☆</button>
+           </div>
+           <a class="wordmark" href="index.html" aria-label="The Vampire Diaries"><img src="imagenes/logo-tvd.png" alt="The Vampire Diaries"></a>
+       </header>
+
+       <nav class="main-nav" aria-label="Navegación principal">
+           <a href="index.html">Inicio</a>
+           <a href="temporadas.html">Temporadas</a>
+           <a href="personajes.html">Personajes</a>
+           <a href="galeria.html">Galería</a>
+           <a href="contacto.html">Contacto</a>
+           <a href="registro.html">Mi cuenta</a>
+       </nav>
+
+       <main class="favorites-page">
+           <section class="favorites-section" aria-labelledby="favorites-title">
+               <h1 id="favorites-title" class="favorites-title">Mis favoritos</h1>
+
+               <div id="favorites-empty" class="favorites-empty" style="display: none;">
+                   <p>Todavía no tenés temporadas favoritas.<br>Explorá las temporadas y guardá tus favoritas.</p>
+                   <a class="button" href="temporadas.html">Ver temporadas</a>
+               </div>
+
+               <div id="favorites-list" class="favorites-list"></div>
+           </section>
+       </main>
+
+       <footer class="site-footer" id="contacto">
+           <div class="footer-top">
+               <a class="mark" href="index.html" aria-label="Inicio"><img src="imagenes/logo-vd.png" alt="The Vampire Diaries"></a>
+               <div class="header-tools">
+                   <button class="favorite favorite-link" type="button" data-link="favoritos.html" aria-label="Ir a favoritos">☆</button>
+               </div>
+               <a class="footer-logo" href="index.html" aria-label="The Vampire Diaries"><img src="imagenes/logo-tvd.png" alt="The Vampire Diaries"></a>
+           </div>
+           <div class="footer-columns">
+               <section>
+                   <h2>Navegación</h2>
+                   <a href="index.html">Inicio</a>
+                   <a href="temporadas.html">Temporadas</a>
+                   <a href="personajes.html">Personajes</a>
+                   <a href="galeria.html">Galería</a>
+                   <a href="contacto.html">Contacto</a>
+                   <a href="registro.html">Mi cuenta</a>
+               </section>
+               <section id="galeria">
+                   <h2>Seguinos</h2>
+                   <a href="index.html#galeria">Instagram</a>
+                   <a href="index.html#galeria">Tik Tok</a>
+               </section>
+               <section>
+                   <h2>Comunidad</h2>
+                   <a href="registro.html">Mi cuenta</a>
+               </section>
+           </div>
+           <div class="copyright">© <span id="year">2026</span> The Vampire Diaries Fan Site. Sitio creado con fines educativos.</div>
+       </footer>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+</html>

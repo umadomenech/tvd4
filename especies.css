@@ -1,0 +1,54 @@
+/* Page-specific styles for especies.html — keeps rest of site intact */
+.species-list {
+  max-width: 1180px;
+  margin: 28px auto 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.species-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: transparent;
+}
+
+.species-image {
+  flex: 0 0 38%;
+  max-width: 420px;
+}
+
+.species-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid rgba(120,6,6,0.6);
+  background: var(--negro);
+}
+
+.species-content {
+  flex: 1 1 62%;
+  color: var(--gris-claro);
+}
+
+.species-content p {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: var(--gris-claro);
+}
+
+/* Ensure species subtitles match site subtitle style */
+.species-content .gallery-subtitle,
+.species-content h2.gallery-subtitle { margin-top: 0; }
+
+@media (max-width: 760px) {
+  .species-row { flex-direction: column; align-items: flex-start; }
+  .species-image { width: 100%; max-width: 100%; }
+  .species-content { width: 100%; }
+}
+
+@media (max-width: 420px) {
+  .species-list { gap: 22px; margin: 18px 12px 40px; }
+}

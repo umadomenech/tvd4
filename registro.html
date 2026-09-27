@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Registro - The Vampire Diaries">
+   <title>The Vampire Diaries | Registro</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="registro.css">
+</head>
+<body class="register-page">
+   <div class="site-shell">
+       <header class="site-header" id="inicio">
+           <a class="mark" href="index.html" aria-label="Inicio"><img src="imagenes/logo-vd.png" alt="The Vampire Diaries"></a>
+           <div class="header-tools">
+               <button class="favorite favorite-link" type="button" data-link="favoritos.html" aria-label="Ir a favoritos">☆</button>
+           </div>
+           <a class="wordmark" href="index.html" aria-label="The Vampire Diaries"><img src="imagenes/logo-tvd.png" alt="The Vampire Diaries"></a>
+       </header>
+
+
+       <nav class="main-nav" aria-label="Navegación principal">
+           <a href="index.html">Inicio</a>
+           <a href="temporadas.html">Temporadas</a>
+           <a href="personajes.html">Personajes</a>
+           <a href="galeria.html">Galería</a>
+           <a href="contacto.html">Contacto</a>
+           <a href="registro.html">Mi cuenta</a>
+       </nav>
+
+
+       <main>
+           <section class="register-section" aria-labelledby="register-title">
+               <div class="register-container">
+                   <h2 id="register-title">BIENVENIDO A MYSTIC FALLS</h2>
+                   <form class="register-form" action="#" method="post" novalidate>
+                       <label for="nombre">NOMBRE</label>
+                       <input id="nombre" name="nombre" type="text" placeholder="Nombre" required autocomplete="given-name">
+
+                       <label for="apellido">APELLIDO</label>
+                       <input id="apellido" name="apellido" type="text" placeholder="Apellido" required autocomplete="family-name">
+
+                       <label for="email">MAIL</label>
+                       <input id="email" name="email" type="email" placeholder="Mail" required autocomplete="email">
+
+                       <label for="password">CONTRASEÑA</label>
+                       <input id="password" name="password" type="password" placeholder="Contraseña" required autocomplete="new-password">
+
+                       <button class="button register-submit" type="submit">REGISTRARME</button>
+                   </form>
+               </div>
+           </section>
+       </main>
+
+
+       <footer class="site-footer" id="contacto">
+           <div class="footer-top">
+               <a class="mark" href="index.html" aria-label="Inicio"><img src="imagenes/logo-vd.png" alt="The Vampire Diaries"></a>
+               <div class="header-tools">
+                   <button class="favorite favorite-link" type="button" data-link="favoritos.html" aria-label="Ir a favoritos">☆</button>
+               </div>
+               <a class="footer-logo" href="index.html" aria-label="The Vampire Diaries"><img src="imagenes/logo-tvd.png" alt="The Vampire Diaries"></a>
+           </div>
+           <div class="footer-columns">
+               <section>
+                   <h2>Navegación</h2>
+                   <a href="index.html">Inicio</a>
+                   <a href="temporadas.html">Temporadas</a>
+                   <a href="personajes.html">Personajes</a>
+                   <a href="galeria.html">Galería</a>
+                   <a href="contacto.html">Contacto</a>
+                   <a href="registro.html">Mi cuenta</a>
+               </section>
+               <section id="galeria">
+                   <h2>Seguinos</h2>
+                   <a href="galeria.html">Instagram</a>
+                   <a href="galeria.html">Tik Tok</a>
+               </section>
+               <section>
+                   <h2>Comunidad</h2>
+                   <a href="registro.html">Mi cuenta</a>
+               </section>
+           </div>
+           <div class="copyright">© <span id="year">2026</span> The Vampire Diaries Fan Site. Sitio creado con fines educativos.</div>
+       </footer>
+   </div>
+   <script src="js/script.js"></script>
+   <script>
+      (function(){
+         const form = document.querySelector('.register-form');
+         if (!form) return;
+         form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            window.location.href = 'index.html';
+         });
+      })();
+   </script>
+</body>
+</html>
